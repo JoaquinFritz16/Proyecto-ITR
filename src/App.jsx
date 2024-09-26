@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 
@@ -13,6 +11,12 @@ const options = {
     'x-rapidapi-host': 'online-movie-database.p.rapidapi.com'
   }
 };
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
 
 function App() {
   const [count, setCount] = useState(0)

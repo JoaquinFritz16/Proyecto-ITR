@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Portada from "./components/Portada";
+import Footer from "./components/Footer";
 import axios from "axios";
 
 const options = {
@@ -22,7 +23,9 @@ try {
 function App() {
 	return (
 		<>
-			<Portada />
+			<h1>hola</h1>
+			{/* <Portada />
+			<Footer/> */}
 		</>
 	);
 }

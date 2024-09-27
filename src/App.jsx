@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Portada from './components/Portada';
 import axios from 'axios'
 
 const options = {
@@ -19,10 +20,10 @@ try {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
+    <Portada />
     </>
   )
 }
